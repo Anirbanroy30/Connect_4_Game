@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mygrid" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anirbanroy.javafxapplication.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="319.0" minWidth="229.99998474121094" prefWidth="234.99998474121094" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="filepane" style="-fx-background-color: #ffffff;" GridPane.columnSpan="2" />
+        <Pane fx:id="Structurepane" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #52c9bf;" GridPane.rowIndex="1" />
+        <VBox fx:id="playervbox" style="-fx-background-color: #251b72;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <TextField fx:id="playerOneTextField" prefHeight="26.0" prefWidth="84.0" promptText="Player One Name">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="35.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="playerTwoTextField" promptText="Player Two Name">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button fx:id="setNamesButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="241.0" text="Set Names">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="label1" alignment="CENTER" prefHeight="43.0" prefWidth="345.0" text="Player One" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="29.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label2" alignment="CENTER" prefHeight="43.0" prefWidth="343.0" text="Turn" textFill="WHITE">
+                    <font>
+                        <Font size="29.0" />
+                    </font>
+                </Label>
+                <Region fx:id="region2" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+    </children>
+</GridPane>
